@@ -12,12 +12,13 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Spatie\Activitylog\Models\Activity;
+use Spatie\Tags\HasTags;
 
 class User extends Authenticatable
 {
     use HasApiTokens;
     use LogsActivity;
-
+    use HasTags;
 
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory;

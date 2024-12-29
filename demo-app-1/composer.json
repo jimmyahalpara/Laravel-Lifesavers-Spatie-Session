@@ -19,6 +19,7 @@
         "spatie/laravel-activitylog": "^4.9",
         "spatie/laravel-backup": "^9.1",
         "spatie/laravel-query-builder": "^6.3",
+        "spatie/laravel-tags": "^4.7",
         "spatie/laravel-translatable": "^6.9"
     },
     "require-dev": {
