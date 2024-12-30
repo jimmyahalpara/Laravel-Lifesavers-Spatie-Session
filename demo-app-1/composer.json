@@ -21,6 +21,7 @@
         "spatie/laravel-login-link": "^1.6",
         "spatie/laravel-medialibrary": "^11.11",
         "spatie/laravel-query-builder": "^6.3",
+        "spatie/laravel-responsecache": "^7.6",
         "spatie/laravel-signal-aware-command": "*",
         "spatie/laravel-tags": "^4.7",
         "spatie/laravel-translatable": "^6.9"

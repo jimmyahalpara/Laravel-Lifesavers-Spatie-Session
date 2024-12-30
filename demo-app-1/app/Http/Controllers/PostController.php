@@ -4,12 +4,20 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controllers\HasMiddleware;
 use Spatie\QueryBuilder\QueryBuilder;
 use Spatie\QueryBuilder\AllowedFilter;
 use Spatie\QueryBuilder\Enums\FilterOperator;
 
-class PostController extends Controller
+class PostController extends Controller implements HasMiddleware
 {
+
+    public static function middleware()
+    {
+        return [
+            'show' => ['cacheResponse'],
+        ];
+    }
     /**
      * Display a listing of the resource.
      */
@@ -43,7 +51,11 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        return [
+            'post' => $post,
+            'tags' => $post->tags,
+            'random' => random_int(1, 100),
+        ];
     }
 
     /**
