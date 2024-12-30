@@ -20,6 +20,7 @@
         "spatie/laravel-backup": "^9.1",
         "spatie/laravel-medialibrary": "^11.11",
         "spatie/laravel-query-builder": "^6.3",
+        "spatie/laravel-signal-aware-command": "*",
         "spatie/laravel-tags": "^4.7",
         "spatie/laravel-translatable": "^6.9"
     },
