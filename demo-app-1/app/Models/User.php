@@ -12,13 +12,16 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Spatie\Activitylog\Models\Activity;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\Tags\HasTags;
 
-class User extends Authenticatable
+class User extends Authenticatable implements HasMedia
 {
     use HasApiTokens;
     use LogsActivity;
     use HasTags;
+    use InteractsWithMedia;
 
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory;
