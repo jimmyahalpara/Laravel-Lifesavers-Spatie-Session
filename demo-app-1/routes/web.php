@@ -1,5 +1,7 @@
 <?php
 
+use Spatie\LaravelPdf\Facades\Pdf;
+use Spatie\Browsershot\Browsershot;
 use Illuminate\Support\Facades\Route;
 use Spatie\Health\Http\Controllers\HealthCheckResultsController;
 
@@ -21,5 +23,4 @@ Route::middleware([
 
     Route::get('health', HealthCheckResultsController::class);
     Route::get('health-json', \Spatie\Health\Http\Controllers\HealthCheckJsonResultsController::class);
-
 });
