@@ -25,7 +25,8 @@
         "spatie/laravel-schedule-monitor": "^3.8",
         "spatie/laravel-signal-aware-command": "*",
         "spatie/laravel-tags": "^4.7",
-        "spatie/laravel-translatable": "^6.9"
+        "spatie/laravel-translatable": "^6.9",
+        "spatie/opening-hours": "^4.1"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
