@@ -13,6 +13,7 @@
         @endsession
 
         <form method="POST" action="{{ route('login') }}">
+            {{-- <x-honeypot /> --}}
             @csrf
 
             <div>
